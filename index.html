@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <section id="start"></section>
+      <header>
+        <a href="#start">
+          <img class="msLogo" src="img/mslogo2.png" alt="Logo">
+        </a>
+        <input class="menuButton" type="checkbox" id="menuButton">
+        <label class="menuIcon" for="menuButton"><span class="navIcon"></span></label>
+        <ul class="menu">
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#mine-kompetencer">Mine Kompetencer</a></li>
+          <li><a href="#om-mig">Om Mig</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </header>
+      <div class="forside">
+        <div class="imgContainer">
+          <img class="forsidePic" src="img/mswj-transparent2.png" alt="Mie Strandby Winther-Jørgensen">
+        </div>
+      </div>
+      <section class="portfolio-section" id="portfolio">
+        <div class="portfolio">
+          <h1>Portfolio</h1>
+          <div class="portfolioIMGContainer">
+            <div class="portfolioIMG">
+              <img class="img" src="img/interestMe.png" alt="InterestMe">
+              <p>Prototyping & design - Interest Me</p>
+            </div>
+            <div class="portfolioIMG">
+              <img class="img" src="img/lys.png" alt="Lys">
+              <p>Fotografering & redigering - Produktbilleder</p>
+            </div>
+            <div class="portfolioIMG">
+              <img class="img" src="img/hundepension.png" alt="Hundepension">
+              <p>Webdesign & webudvikling - Meldgaard hundepension</p>
+            </div>
+            <div class="portfolioIMG">
+              <img class="img" src="img/folder.png" alt="Folder">
+              <p>Brochure & installation - Hit-A-City</p>
+            </div>
+            <div class="portfolioIMG">
+              <img class="img" src="img/yummy.png" alt="Food App">
+              <p>Prototyping & design - Food App</p>
+            </div>
+            <div class="portfolioIMG">
+              <img class="img" src="img/yt2.png" alt="InterestMe">
+              <p>Filmproduktion & stop motion - Music Battle</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mine-kompetencer-section" id="mine-kompetencer">
+        <h1>Mine Kompetencer</h1>
+        <div class="mine-kompetencer">
+          <div class="kompetenceBox">
+            <img src="img/icons/grafiskdesign.png" alt="Grafisk Design">
+            <h2>Grafisk Design</h2>
+            <p>
+              Jeg elsker at gå i dybden med grafisk design,
+              specialt via former, farver samt skrifttyper.
+              Jeg har erfaring indenfor InDesign og Illustrator.
+            </p>
+          </div>
+          <div class="kompetenceBox">
+            <img src="img/icons/prototyping.png" alt="Prototyping">
+            <h2>Prototyping</h2>
+            <p>
+              Jeg synes, det er spændende at teste idéer om
+              funktionalitet og design. Dette har jeg erfaring med at
+              gøre i både high og low fidelity.
+            </p>
+          </div>
+          <div class="kompetenceBox">
+            <img src="img/icons/webdesign.png" alt="Webdesign">
+            <h2>Webdesign</h2>
+            <p>
+              Jeg kan lave alt fra wireframe til programmering
+              af hjemmesider. Mit største flair ligger dog i detaljerne
+              samt brugervenligheden.
+            </p>
+          </div>
+          <div class="kompetenceBox">
+            <img src="img/icons/illustrationer.png" alt="Illustration">
+            <h2>Illustration</h2>
+            <p>
+              Det betyder meget for mig at kunne udleve
+              min kreative side igennem unikke illustrationer.
+              Både håndlavede og digitalt.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="om-mig" id="om-mig">
+        <div class="omMigPic">
+          <div class="omMigBox">
+            <h1>Om Mig</h1>
+            <p>
+              Mit navn er Mie Strandby Winther-Jørgensen. Jeg er 24 år gammel
+              og er bosat i Odense. På nuværende tidspunkt studerer jeg
+              multimediedesigner på University College Lillebælt (UCL).
+              Som person er jeg passioneret, imødekommende og altid smilende.
+              Derudover har jeg en stor arbejdsidentitet og stortrives i en travl hverdag.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="kontakt">
+        <div class="kontaktTitle">
+          <h1>Kontakt</h1>
+        </div>
+        <div class="kontakt">
+          <div class="mobilnmail">
+            <p>Mobil: +45 29 76 43 64</p>
+            <p>E-mail: mswi29405@edu.ucl.dk</p>
+          </div>
+          <div class="someIcons">
+            <a href="https://www.facebook.com/mie.wintherjorgensen">
+              <img src="img/icons/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/mie_strandby/">
+              <img src="img/icons/instagram.png" alt="Instagram">
+            </a>
+          </div>
+          <form>
+            <input type="text" id="name" name="name" placeholder="Navn...">
+            <input type="text" id="mobile" name="mobile" placeholder="Mobil...">
+            <input type="text" id="email" name="email" placeholder="E-mail...">
+            <textarea id="besked" name="besked" placeholder="Skriv noget..." style="height:200px"></textarea>
+          </form>
+          <div class="sendknap">
+            <input class="send" type="submit" value="Send">
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>© 2020 // Mie Strandby Winther-Jørgensen</p>
+      </footer>
+    </div>
+  </body>
+</html>

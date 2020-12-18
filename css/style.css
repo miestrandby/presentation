@@ -1,0 +1,448 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+}
+
+/* Her starter Header og Nav Bar */
+
+.msLogo {
+  max-width: 250px;
+  max-height: 100px;
+  min-height: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+  margin-top: 7px;
+}
+
+header {
+  font-family: helvetica, sans-serif;
+  position: relative;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  background-image: url("../img/hvid-gradient-headerpng.png");
+  background-repeat: no-repeat;
+}
+
+/* Drop Down Burger Menu */
+
+header ul a {
+  text-decoration: none;
+  text-align: right;
+  font-size: 16px;
+  color: #707070;
+  display: block; /* Gør, at man kan klikke på hele kassen og ikke kun teksten */
+  outline: 1px solid #707070;
+  padding: 20px;
+  position: relative;
+  transition: .2s ease-out;
+}
+
+header ul a:hover {
+  background-color: #707070;
+  color: #fff;
+  border-left: 4px solid #a7a2a2;
+  position: relative;
+}
+
+header ul {
+  list-style: none;
+  overflow: hidden;
+  background-color: #ffffff;
+  width: 50%;
+  margin: auto;
+  float: right;
+}
+
+header .menu {
+  clear: both;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  max-height: 0; /* Den der gør, at Dropdownen ikke kan ses, før den bliver aktiveret senere */
+  transition: max-height .4s cubic-bezier(0.33, 1, 0.68, 1); /* Definerer hvilken animationform Dropdownen benytter sig af */
+}
+
+header .menuIcon {
+  padding: 20px;
+  position: relative;
+  cursor: pointer;
+  float: right;
+  padding: 32px;
+}
+
+header .menuIcon .navIcon {
+  background-color: #000;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background .2s ease-out;
+}
+
+header .menuIcon .navIcon:before {
+  background: #000;
+  content:"";
+  display:block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  top: 5px;
+}
+
+header .menuIcon .navIcon:after {
+  background: #000;
+  content:"";
+  display:block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  top: -5px;
+}
+
+header .menuButton {
+  display: none;
+}
+
+header .menuButton:checked ~ .menu {
+  max-height: 250px;
+}
+
+header .menuButton:checked ~ .menuIcon .navIcon {
+  background-color: transparent;
+}
+
+header .menuButton:checked ~ .menuIcon .navIcon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+header .menuButton:checked ~ .menuIcon .navIcon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+header .menuButton:checked ~ .mainContent {
+  margin-top: 550px;
+}
+
+/* Her slutter Header og Nav Bar */
+
+/* Her starter forsiden */
+
+.forside {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.forsidePic {
+  max-width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  margin: 70px 0;
+}
+
+/* Her slutter forsiden */
+
+/* Her starter Portfolio */
+
+.portfolio {
+  text-align: center;
+
+}
+
+.portfolio h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 20px;
+  font-weight: 400;
+  font-size: 45px;
+}
+
+.portfolioIMGContainer {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.portfolioIMG {
+  height: 350px;
+  width: 350px;
+  background-color: #white;
+  margin: 35px;
+  display:block;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolioIMG p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  margin-top: 7%;
+}
+
+.portfolio-section {
+  padding-top: 30px;
+}
+
+/* Her slutter Portfolio */
+
+/* Her starter Mine Kompetencer */
+
+.mine-kompetencer-section {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding-top: 30px;
+}
+
+.mine-kompetencer-section h1 {
+  margin: 30px 0 50px 0;
+  font-weight: 400;
+  font-size: 45px;
+}
+
+.mine-kompetencer-section {
+  padding-top: 30px;
+}
+
+.mine-kompetencer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.kompetenceBox {
+  width: 250px;
+}
+
+.kompetenceBox img {
+  width: 25%;
+  margin: 20px;
+}
+
+.kompetenceBox h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.kompetenceBox p {
+  font-weight: 200;
+  margin: 25px;
+}
+
+/* Her slutter Mine Kompetencer */
+
+/* Her starter "Om Mig" */
+
+.om-mig {
+  width: 100%;
+  height: 100%;
+}
+
+.omMigPic {
+  background-image: url("../img/ommswj.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 15%;
+  max-width: 100%;
+  max-height: 100%;
+  padding-top: 80px;
+}
+
+.omMigBox {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: rgba(164, 194, 194, 0.5);
+  width: 40%;
+  position: relative;
+  left: 40%;
+  padding: 20px;
+  margin-bottom: 120px;
+}
+
+.omMigBox p {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.omMigBox h1 {
+  margin: 0 20px 20px 20px;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+/* Her slutter "Om Mig" */
+
+/* Her starter "Kontakt" */
+
+.kontakt {
+  border: 2px solid #a4c2c2;
+  width: 85%;
+  margin: 30px auto;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding-top: 50px;
+}
+
+.kontaktTitle {
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 30%;
+  padding: 40px;
+  margin: auto;
+  background-color: grey;
+  text-align: center;
+  background-color: #a4c2c2;
+}
+
+.kontakt p {
+  margin: 35px 10%;
+}
+
+.someIcons {
+  margin: 10px 8%;
+}
+
+.someIcons a {
+  text-decoration: none;
+
+}
+
+.someIcons a:hover img {
+  background-color: #a4c2c2;
+  border-radius: 20px;
+}
+
+.someIcons img {
+  width: 5%;
+  height: 5%;
+  padding: 10px;
+  transition: 0.5s ease-out;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input[type=text], select {
+  width: 30%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+#email {
+  width: 80%;
+}
+
+textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.sendknap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.send {
+  padding: 6px 15px;
+  border: none;
+  background-color: #a4c2c2;
+  cursor: pointer;
+  margin: 20px 2px 35px 2px;
+  border-radius: 15px;
+}
+
+/* Her slutter "Kontakt" */
+
+footer {
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 50px;
+  text-align: center;
+  font-weight: 200;
+}
+
+footer p {
+
+}
+
+@media only screen and (min-device-width: 668px) and (max-device-height: 1223px) {
+  .omMigPic {
+    height: 500px;
+    margin: 50px;
+  }
+
+  .omMigBox {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgba(164, 194, 194, 0.5);
+    width: 40%;
+    position: relative;
+    left: 50%;
+    padding: 20px;
+    margin-top: 120px;
+  }
+}
+
+@media only screen and (min-device-width: 1224px) {
+
+  .omMigPic {
+    height: 800px;
+    margin: 50px;
+  }
+
+  .omMigBox {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgba(164, 194, 194, 0.5);
+    width: 40%;
+    position: relative;
+    left: 50%;
+    padding: 20px;
+    margin-top: 180px;
+  }
+
+  .omMigBox p {
+    font-size: 25px;
+    font-weight: 200;
+  }
+
+  .omMigBox h1 {
+    margin: 0 20px 20px 20px;
+    font-size: 45px;
+    font-weight: 400;
+  }
+}
